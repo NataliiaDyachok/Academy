@@ -1,0 +1,24 @@
+{
+  "name": "homework-1",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "../server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NataliiaDyachok/Academy.git"
+  },
+  "author": "Nataliia Diachok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NataliiaDyachok/Academy/issues"
+  },
+  "homepage": "https://github.com/NataliiaDyachok/Academy#readme",
+  "dependencies": {
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1"
+  }
+}
