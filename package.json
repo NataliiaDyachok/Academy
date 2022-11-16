@@ -4,7 +4,7 @@
   "description": "homework",
   "main": "../server/index.js",
   "scripts": {
-    "start": "node server/lecture7.js",
+    "start": "node server/lecture8_2.js",
     "test": "run start"
   },
   "repository": {
@@ -22,3 +22,5 @@
     "prettier": "^2.7.1"
   }
 }
+
+
