@@ -1,4 +1,5 @@
-const readline = require('node:readline/promises');
+// const readline = require('node:readline/promises');
+const readline = require('node:readline');
 const { stdin: input, stdout: output } = require('process');
 
 const rl = readline.createInterface({ input, output });
@@ -39,5 +40,25 @@ function boot() {
     .then(() => rl.close());
 }
 
+function bootCallBack() {
+  let ourBuyer = '';
+  let ourProduct = '';
+  let ourCost = 0;
+
+  rl.question('Input buyer, please! ', (buyer) => {
+    ourBuyer = buyer;
+    rl.question('Input product, please! ', (product) => {
+      ourProduct = product;
+      ourCost = generateRandomInteger(10, 500).toFixed(2);
+      console.log(
+        `Dear ${ourBuyer}!\n Thank you for your purchase in our shop \n ${ourProduct} costs just ${ourCost} \n`,
+        `Have a nice day!`,
+      );
+      rl.close();
+    });
+  });
+}
+
 // boot();
-bootAsyncAwait();
+// bootAsyncAwait();
+bootCallBack();
