@@ -4,7 +4,7 @@
   "description": "homework",
   "main": "../server/index.js",
   "scripts": {
-    "start": "node server/lecture9_2.js",
+   "start": "node server/lecture10.js",
     "test": "run start"
   },
   "repository": {
