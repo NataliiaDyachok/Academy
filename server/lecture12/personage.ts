@@ -10,6 +10,9 @@ class Personage {
     this.health = num;
   };
 
+  public attack(){}
+  public capabilities(){}
+
 }
 
 export default Personage;
