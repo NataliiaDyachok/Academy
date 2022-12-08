@@ -1,6 +1,7 @@
 class Personage {
 
   private health: Number;
+  name = 'Personage';
 
   public getHealth(): Number {
     return this.health;
@@ -10,8 +11,8 @@ class Personage {
     this.health = num;
   };
 
-  public attack(){}
-  public capabilities(){}
+  public attack: Function
+  public capabilities: Function
 
 }
 

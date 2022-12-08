@@ -1,11 +1,19 @@
 import Personage from './personage';
 
 class Thief extends Personage {
-  public archeryShot(): void {
+
+  constructor() {
+    super()
+    this.name = 'Thief'
+    this.attack = this.archeryShot;
+    this.capabilities = this.runAway;
+  }
+  
+  private archeryShot(): void {
      
   } 
 
-  public runAway(): void {
+  private runAway(): void {
      
   } 
 }

@@ -1,11 +1,19 @@
 import Personage from './personage';
 
 class Soldier extends Personage {
-  public swordStrike(): void {
+
+  constructor() {
+    super()
+    this.name = 'Soldier'
+    this.attack = this.swordStrike;
+    this.capabilities = this.protection;
+  }
+  
+  private swordStrike(): void {
      
   } 
 
-  public protection(): void {
+  private protection(): void {
      
   } 
 }

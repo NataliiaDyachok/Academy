@@ -1,11 +1,19 @@
 import Personage from './personage';
 
 class Magician extends Personage {
-  public fireball(): void {
+
+  constructor() {
+    super()
+    this.name = 'Magician'
+    this.attack = this.fireball;
+    this.capabilities = this.bewitch;
+  }
+  
+  private fireball(): void {
      
   } 
 
-  public bewitch(): void {
+  private bewitch(): void {
      
   } 
 }
