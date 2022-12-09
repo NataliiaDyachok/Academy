@@ -11,8 +11,8 @@ class Personage {
     this.health = num;
   };
 
-  public attack: Function
-  public capabilities: Function
+  public attack() {};
+  public capabilities() {};
 
 }
 

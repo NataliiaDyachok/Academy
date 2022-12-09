@@ -2,13 +2,13 @@ import Personage from './personage';
 import Soldier from './soldier';
 import Thief from './thief';
 import Magician from './magician';
-
+import EnumPersonage from './enums';
 
 class Creator {
   static createObject(someProperty: string): Personage {
-      if (someProperty === 'm') {
+      if (someProperty === EnumPersonage.MAGICIAN) {
           return new Magician()
-      } else if (someProperty === 't') {
+      } else if (someProperty === EnumPersonage.THIEF) {
           return new Thief()
       } else {
           return new Soldier()
@@ -16,7 +16,4 @@ class Creator {
   }
 }
 
-const PERSONAGE = Creator.createObject('m')
-console.log(PERSONAGE.name);
-const PERSONAGE2 = Creator.createObject('t')
-console.log(PERSONAGE2.name);
+export default Creator;
